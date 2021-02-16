@@ -1,0 +1,21 @@
+<div class="grid">
+  <div class="header_left">
+    <span>Spares Sales Invoice</span>
+  </div>
+  <div class="header_right">
+    <label for="sms">SMS </label>
+    <input type="checkbox" name="sms">
+    <label for="email">Email</label>
+    <input type="checkbox" name="email">
+    <button>Save</button>
+  </div>
+  <div class="transaction_body">
+    <dx-data-grid
+     [height]="auto"
+     [dataSource]="dataSourse" [showRowLines]="true" [rowAlternationEnabled]="true"
+	    [(filterValue)]="gridFilter" [filterSyncEnabled]="true">
+    </dx-data-grid>
+  </div>
+</div>
+
+
